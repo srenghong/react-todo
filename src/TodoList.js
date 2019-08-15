@@ -1,10 +1,6 @@
-import React from "react";
-import { Component } from "react";
+import React, { Component } from "react";
 
 class TodoList extends Component {
-  componentDidUpdate() {
-    // this.props.inputElement.current.focus();
-  }
   render() {
     return (
       <div className="todoListMain">
@@ -18,6 +14,7 @@ class TodoList extends Component {
             />
             <button type="submit"> Add Task </button>
           </form>
+          <p>Click on each task to remove it</p>
         </div>
       </div>
     );
